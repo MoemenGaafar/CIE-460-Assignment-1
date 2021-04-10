@@ -19,12 +19,12 @@ public class Square extends Rectangle {
 	}
 
 	public Square(int x, int y, int s, Color c) {
-		super(x, y, s, s, c);
+		super(x, y, s, s, c, "New Square");
 	}
 
 
 	public Square(int x, int y, int s) {
-		super(x, y, s, s);
+		super(x, y, s, s, Color.GRAY, "New Square");
 	}
 
 }

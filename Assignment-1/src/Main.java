@@ -4,10 +4,10 @@
 
 import javax.swing.*;
 import java.awt.*;
-import geometric.Shape;
 import geometric.Circle;
-import geometric.Temp;
 import geometric.Rectangle;
+import geometric.Square;
+
 
 /**
  * @author LENOVO
@@ -17,27 +17,29 @@ public class Main {
 	
 	
 	public static void main(String a[]){
-        JFrame frame = new JFrame();
-//        frame.setLayout(new FlowLayout());
-
-        
+		
+		// Set-up the drawing frame
+        JFrame frame = new JFrame("Shapes");       
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-//        frame.setLayout(new FlowLayout());
-
         frame.setSize(400,400);
-//        Temp myshape = new Temp();
-        Shape circle = new Circle(10,10,80, Color.blue, "Moemen Circle");
-//        Shape rect = new Rectangle(80, 100, 120, 120);
+        
+        Circle circle = new Circle(0,0,80, Color.blue, "Moemen Circle");
+        
+        // Shift the circle to the right
+        System.out.println("Circle X-Coordinate is: " + circle.getCenterX());
+        circle.goRight();
+        System.out.println("Circle X-Coordinate after shifting is: " + circle.getCenterX());
+        
+        // Resize the circle (Enlarge by 2x)
+        System.out.println("Circle Perimeter = " + circle.getPerimeter());
+        circle.resize(2);
+        System.out.println("Circle Perimeter after scaling = " + circle.getPerimeter());
+        
+        // Add the circle to the drawing frame
         frame.add(circle);
-//        frame.add(rect);
+        
+        // Show the frame
         frame.setVisible(true);   
     }
-	
-
-//	public void paint(Graphics g){
-//        g.drawOval(40, 40, 60, 60); //FOR CIRCLE
-//        g.drawRect(80, 30, 200, 200); // FOR SQUARE
-//        g.drawRect(200, 100, 100, 200); // FOR RECT
-//	}
 		 
 }

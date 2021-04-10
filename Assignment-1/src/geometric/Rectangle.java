@@ -50,7 +50,7 @@ public class Rectangle extends TwoDimensionalShape{
 	@Override
 	public void paint(Graphics g) {
 		g.setColor(getColor());
-		g.fillRect(getCenterX(), getCenterY(), getLength(), getWidth());
+		g.fillRect(getCenterX(), getCenterY(), length, width);
         g.drawString(getLabel(), getCenterX()+5, getCenterY()-5);
 	}
 

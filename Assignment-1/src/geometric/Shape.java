@@ -28,12 +28,12 @@ public abstract class Shape extends Component{
 	 * Define common methods to all shapes
 	 */
 	public void goUp() {
-		centerY += 10;
+		centerY -= 10;
 		repaint();
 	}
 	
 	public void goDown() {
-		centerY -= 10;
+		centerY += 10;
 		repaint();
 	}
 	
