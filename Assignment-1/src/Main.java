@@ -17,8 +17,8 @@ public class Main {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setSize(400,400);
-        Shape myshape = new Shape();
-        frame.add(myshape);
+//        Shape myshape = new Shape();
+//        frame.add(myshape);
         frame.setVisible(true);
     }
 	

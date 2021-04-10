@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author LENOVO
- *
- */
-package geometric;
