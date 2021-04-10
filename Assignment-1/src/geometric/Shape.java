@@ -21,6 +21,7 @@ public abstract class Shape extends Component{
 	 */
 	public abstract void paint(Graphics g);
 	public abstract void resize(double scale);
+	public abstract double getArea();
 	
 	
 	/*

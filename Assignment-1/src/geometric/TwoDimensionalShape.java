@@ -3,24 +3,13 @@
  */
 package geometric;
 
-import java.awt.Graphics;
-
 /**
  * @author LENOVO
  *
  */
-public class TwoDimensionalShape extends Shape {
+public abstract class TwoDimensionalShape extends Shape {
 
-	@Override
-	public void paint(Graphics g) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void resize(double scale) {
-		// TODO Auto-generated method stub
-		
-	}
-
+	// For a two dimensional shape, we should be able to calculate the perimeter.
+	public abstract double getPerimeter();
+	
 }

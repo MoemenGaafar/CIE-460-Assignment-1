@@ -5,6 +5,8 @@
 import javax.swing.*;
 import java.awt.*;
 import geometric.Shape;
+import geometric.Circle;
+import geometric.Temp;
 
 /**
  * @author LENOVO
@@ -17,8 +19,9 @@ public class Main {
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setSize(400,400);
-//        Shape myshape = new Shape();
-//        frame.add(myshape);
+//        Temp myshape = new Temp();
+        Shape myshape = new Circle(15,15,80, Color.blue, "Moemen Circle");
+        frame.add(myshape);
         frame.setVisible(true);
     }
 	
