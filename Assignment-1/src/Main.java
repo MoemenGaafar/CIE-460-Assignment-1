@@ -19,11 +19,10 @@ public class Main {
 	public static void main(String a[]){
 		
 		// Set-up the drawing frame
-        JFrame frame = new JFrame("Shapes");       
+        JFrame frame = new JFrame("Shapes");  
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.setSize(400,400);
-        
-        Circle circle = new Circle(0,0,80, Color.blue, "Moemen Circle");
+        Circle circle = new Circle(50, 50, 80, Color.blue, "Moemen Circle");
         
         // Shift the circle to the right
         System.out.println("Circle X-Coordinate is: " + circle.getCenterX());
@@ -37,7 +36,7 @@ public class Main {
         
         // Add the circle to the drawing frame
         frame.add(circle);
-        
+
         // Show the frame
         frame.setVisible(true);   
     }
